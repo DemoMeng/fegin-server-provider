@@ -7,8 +7,16 @@ server:
 spring:
   application:
     name: feign-server-provider
+  cloud:
+    #sentinel
+    sentinel:
+      eager: true
+      transport:
+        dashboard: localhost:8080
+        port: 8719
 
 eureka:
   client:
     serviceUrl:
       defaultZone: http://localhost:8761/eureka/
+
