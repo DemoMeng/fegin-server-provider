@@ -3,6 +3,7 @@ package com.mqz.feign.server.provider.web;
 import com.mqz.feign.server.provider.common.PrefixForGateway;
 import com.mqz.mars.base.constants.FeignCloudConstant;
 import org.apache.http.impl.bootstrap.HttpServer;
+import org.springframework.cloud.netflix.eureka.serviceregistry.EurekaAutoServiceRegistration;
 import org.springframework.util.StringUtils;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
